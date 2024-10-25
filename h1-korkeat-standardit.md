@@ -32,7 +32,7 @@ Systemaattinen lähestymistapa organisaatioille turvallisuuden integroimisesta o
 
 Olen samaa mieltä podcastissa todettuun että ei ole, poislukien ohjelmat joita kukaan ei käytä.
 
-### Hallinnolinen tietoturva on teknisen tietoturvan edellytys? 
+### Hallinnollinen tietoturva on teknisen tietoturvan edellytys? 
 
 Näinhän se on ja kuten podcastissakin todettiin niin hallinollisen tietoturvan määrittelyssä saadaan tietää minkälaista teknistä tietoturvaa vaaditaan.
 
@@ -42,7 +42,7 @@ Se voi nopeuttaa testaamista mutta jos testaus ei kata kaikkea niin voi jäädä
 
 ### Ohjelmistoa suunniteltaessa voidaan auttaa käyttäjää toimimaan tietoturvallisesti?
 
-Pidän sitä mahdollisena jos se ei ärsytä käyttäjää, esimerkiksi salasanoissa vaadittu että on isoa kirjainta, numeroita ja erikoismerkkejä usein johtaa laiskoihin salasanoihin jos ei käytä salasanan hallintaan tarkoitettua työkalua, pidän esimerkiksi useamman vaiheen todennus erilaisilla turvatunnisteilla(USB avaimet) tai ssh avaimiin perustuvaa turvaa helpompana vaihtoehtona kuin tyypilliset salasanat jolloin saadaan käyttäjän näkökulmasta hyötyä käytettävyyden sekä tietoturvan kannalta.
+Pidän sitä mahdollisena jos se ei ärsytä käyttäjää, esimerkiksi salasanoissa vaadittu että on isoa kirjainta, numeroita ja erikoismerkkejä usein johtaa laiskoihin salasanoihin jos ei käytä salasanan hallintaan tarkoitettua työkalua, pidän esimerkiksi useamman vaiheen todennus erilaisilla turvatunnisteilla(USB avaimet) tai SSH-avaimiin perustuvaa turvaa helpompana vaihtoehtona kuin tyypilliset salasanat jolloin saadaan käyttäjän näkökulmasta hyötyä käytettävyyden sekä tietoturvan kannalta.
  
 ### Ohjelmiston tietoturvaan vaikuttaa kuinka arkaluonteisia tietoja käsitellään?
 
@@ -50,7 +50,7 @@ Aina kannattaa yrittää tehdä tietoturvallinen ratkaisu, lainsäädäntö myö
 
 ### Ohjelmiston kehittäjät näkevät omat ohjelmat huomattavasti riskialttiimpina kuin muiden kehittämät ohjelmat?
 
-Kun tuntee ohjelman niin tuntee myös sen heikkoudet paremmin, kuten tunnillakin todettiin että iso osa ohjelmoijista ei pitäisi omia taitojaan hyvänä vaikka olisi 10 vuotta kokemusta. 
+Kun tuntee ohjelman niin tuntee myös sen heikkoudet paremmin, kuten tunnillakin todettiin että iso osa ohjelmoijista ei pitäisi omia taitojaan hyvänä vaikka olisi 10 vuotta kokemusta kielestä. 
 
 
 ## Lähteet:
@@ -62,4 +62,4 @@ TIETOJA SISÄLTÄVISSÄ PALVELUISSA. Luettavissa: [https://dvv.fi/documents/1607
 
 Meurman 2021. Laatulöpinät-podcast: Tietoturvallisuus ohjelmistokehityksessä – Tarkastele kokonaisuutta ja hyödynnä viitekehykset. Kuunneltavissa: [https://www.arter.fi/podcast/laatulopinat-podcast...](https://www.arter.fi/podcast/laatulopinat-podcast-tietoturvallisuus-ohjelmistokehityksessa-tarkastele-kokonaisuutta-ja-hyodynna-viitekehykset/) Kuunneltu: 25.10.2024.
 
-
+Karvinen, T. 2024. Sovellusten hakkerointi ja haavoittuvuudet. Luettavissa: [https://terokarvinen.com/application-hacking/](https://terokarvinen.com/application-hacking/).
