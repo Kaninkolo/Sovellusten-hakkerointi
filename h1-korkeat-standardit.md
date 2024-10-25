@@ -24,7 +24,7 @@ Haavoittuivuus on puute omaisuudessa tai sen kontrollissa jota pystyy hyväksik�
 
 ## Tutustu standardiin ISO 27034-1 - 5. Selvitä mistä standardi kokonaisuudesta on kyse.
 
-Systemaattinen lähestymistapa organisaatioille turvallisuuden integroimisesta ohjelmistoille koko ohjelmiston elämänkaaren ajan. Ottaa kantaa sovelluksen taustalla olevaan ohjelmistoon ja sen turvallisuuteen vaikuttaviin tekijöihin. Sopii kaiken kokoisille ja tyyppisille organisaatiolle. Ei kuitenkaan anna ohjeita fyysiseen tai verkon tietoturvaan, eikä toimi ohjeena turvalliseen koodin luontiin millekkään ohjelmointikielelle! (Suomen Standardisoimisliitto SFS ry 2020)
+Systemaattinen lähestymistapa organisaatioille turvallisuuden integroimisesta ohjelmistoille koko ohjelmiston elämänkaaren ajan. Ottaa kantaa sovelluksen taustalla olevaan ohjelmistoon ja sen turvallisuuteen vaikuttaviin tekijöihin. Sopii kaiken kokoisille ja tyyppisille organisaatiolle. Ei kuitenkaan anna ohjeita fyysiseen tai verkon tietoturvaan, eikä toimi ohjeena turvalliseen koodin luontiin millekkään ohjelmointikielelle! (International Organization for Standardization 2011)
 
 ## Kuuntele podcast: Meurman 2021: Laatulöpinät 30: Tietoturvallisuus ohjelmistokehityksessä. Mitä mieltä olet podcastin väittämistä?
 
@@ -55,7 +55,9 @@ Kun tuntee ohjelman niin tuntee myös sen heikkoudet paremmin, kuten tunnillakin
 
 ## Lähteet:
 
-Suomen Standardisoimisliitto SFS ry 2020.  SFS-EN ISO/IEC 27000:2020:en. Luettu: 23.10.2024.
+Suomen Standardisoimisliitto SFS ry 2020. SFS-EN ISO/IEC 27000:2020:en. Luettu: 23.10.2024.
+
+International Organization for Standardization 2011. ISO/IEC 27034-1:2011. Luettu 23.10.2024.
 
 Digi- ja väestötietovirasto. OHJE: TIETOTURVA- TAI TIETOSUOJAPOIKKEAMIEN KÄSITTELYSTÄ HENKILÖ-
 TIETOJA SISÄLTÄVISSÄ PALVELUISSA. Luettavissa: [https://dvv.fi/documents/16079645/17325934/..](https://dvv.fi/documents/16079645/17325934/Tietoturva-+tai+tietosuojapoikkeamien+käsittelyohje.pdf/). Luettu: 23.10.2024.
