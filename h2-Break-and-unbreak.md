@@ -2,7 +2,7 @@
 
 ## Ympäristö 
 
-Käyttöjärjestelmä: Arch
+Käyttöjärjestelmä: Arch Linux x86_64
 
 Prosessori: AMD Ryzen 5 2500U
 
@@ -77,13 +77,27 @@ Tällä komennolla sain ratkaistua tehtävän.
 
 Korjasin SQL lausekkeen käyttämällä parametrisoitua SQL lauseketta(Finding and Fixing SQL Injection Vulnerabilities in Flask (Python) with StackHawk 2024)
 
-![kuva](kuva)
+![images/010parametrisoitu.png](images/010parametrisoitu.png)
 
 Sen jälkeen testasin ratkaisua:
 
-![kuva](kuva)
+![images/010ratkaisu.png](images/010ratkaisu.png)
 
 ## Ratkaise dirfuzt-1 artikkelista Karvinen 2023
+
+Latasin kohteen ja fuzzasin sen
+
+	ffuf -w common.txt -u http://127.0.0.2:8000/FUZZ
+
+![images/dirfuzz](images/dirfuzz)
+
+Huomasin etta palvelin antaa 200 vastauksen jokaiseen kohteeseen josta ei ole hyotya minulle. Paatin filtteroida koon mukaan -fs parametrilla
+
+	ffuf -w common.txt -fs 132 -u http://127.0.0.2:8000/FUZZ
+
+Josta loysin ratkaisun.
+
+![images/dirfuzzratkaisu](images/dirfuzzratkaisu)
 
 ## Murtaudu 020-your-eyes-only
 
@@ -112,8 +126,6 @@ Kokeilin alkuun SQL injektioita sekä käyttäjätunnusten luontia ja sen kautta
 Sen jälkeen asensin Fuzzerin(ffuf), AUR:ista yay:lla 
 
 	yay ffuf
-
-![kuva aur](kuva aur)
 
 Fuzzasin kohteen ja löysin osoitteen admin-console. 
 
