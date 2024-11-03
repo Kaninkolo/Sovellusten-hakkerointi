@@ -145,6 +145,8 @@ Tarkistin vielä että se toimi.
 
 ## Lähteet: 
 
+Karvinen, T. 2024. Sovellusten hakkerointi ja haavoittuvuudet. Luettavissa: [https://terokarvinen.com/application-hacking/](https://terokarvinen.com/application-hacking/)
+
 OWASP. Top 10:2021. Luettavissa: [https://owasp.org/Top10/A01_2021-Broken_Access_Control/](https://owasp.org/Top10/A01_2021-Broken_Access_Control/). Luettu: 2.11.2024
 
 PortSwigger. Luettavissa: [https://portswigger.net/web-security/access-control](https://portswigger.net/web-security/access-control). Luettu: 2.11.2024. 
