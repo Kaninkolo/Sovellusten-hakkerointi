@@ -15,27 +15,25 @@ Muisti: 8Gt.
 
 Käy läpi kymmenen OWASP:in luokkitelemaa yleisintä tietoturvariskiä läpi.
 
-A01 Rikkinäinen pääsynvalvonta
+A01 Rikkinäinen pääsynvalvonta.
 
-A02 Kryptograafiset virheet
+A02 Kryptograafiset virheet.
 
-A03 Injektiot
+A03 Injektiot.
 
-A04 Epäturvallinen suunnitelu
+A04 Epäturvallinen suunnitelu.
 
-A05 Tietoturvan väärin konfigurointi
+A05 Tietoturvan väärin konfigurointi.
 
-A06 Haavoittuvat ja päivittämättömät komponentit
+A06 Haavoittuvat ja päivittämättömät komponentit.
 
-A07 Todennuksen epäonnistuminen
+A07 Todennuksen epäonnistuminen.
 
-A08 Tiedon eheyden epäonnistuminen
+A08 Tiedon eheyden epäonnistuminen.
 
-A09 Turvallisuuden lokittamisen ja valvonnan epäonnistuminen
+A09 Turvallisuuden lokittamisen ja valvonnan epäonnistuminen.
 
-A10 Palvelimen pyyntöjen väärentäminen
-
-(Top 10:2021)
+A10 Palvelimen pyyntöjen väärentäminen.
 
 ### Karvinen 2023 - Find Hidden Web Directories
 
@@ -89,33 +87,33 @@ Latasin kohteen ja fuzzasin sen
 
 	ffuf -w common.txt -u http://127.0.0.2:8000/FUZZ
 
-![images/dirfuzz](images/dirfuzz)
+![images/dirfuzz.png](images/dirfuzz.png)
 
-Huomasin etta palvelin antaa 200 vastauksen jokaiseen kohteeseen josta ei ole hyotya minulle. Paatin filtteroida koon mukaan -fs parametrilla
+Huomasin että palvelin antaa 200 vastauksen jokaiseen kohteeseen josta ei ole hyötyä minulle. Päätin filtteröidä koon mukaan -fs parametrilla.
 
 	ffuf -w common.txt -fs 132 -u http://127.0.0.2:8000/FUZZ
 
-Josta loysin ratkaisun.
+Josta löysin ratkaisun.
 
-![images/dirfuzzratkaisu](images/dirfuzzratkaisu)
+![images/dirfuzzratkaisu.png](images/dirfuzzratkaisu.png)
 
 ## Murtaudu 020-your-eyes-only
 
 (Aloitettu tunnilla)
 
-Alkuun loin virtuaali ympäristön
+Alkuun loin virtuaali ympäristön.
 
 	python -m venv venv --system-site-packages
 
-Otin virtuaali ympäristön käyttöön
+Otin virtuaali ympäristön käyttöön.
 
 	source venv/bin/activate
 
-Asensin riippuvuudet
+Asensin riippuvuudet.
 
 	pip install -r requirements.txt
 
-Menin django palvelimen hakemistoon ja tein migraatiot ja käynnistin palvelimen
+Menin django palvelimen hakemistoon ja tein migraatiot ja käynnistin palvelimen.
 
 	./manage makemigrations; ./manage migrate
 
@@ -123,7 +121,7 @@ Menin django palvelimen hakemistoon ja tein migraatiot ja käynnistin palvelimen
 
 Kokeilin alkuun SQL injektioita sekä käyttäjätunnusten luontia ja sen kautta IDOR:ia mutta en huomannut mitään erikoista jota voisin käyttää hyväksi.
 
-Sen jälkeen asensin Fuzzerin(ffuf), AUR:ista yay:lla 
+Sen jälkeen asensin Fuzzerin(ffuf), AUR:ista yay:lla.
 
 	yay ffuf
 
@@ -147,19 +145,22 @@ Tarkistin vielä että se toimi.
 
 ## Lähteet: 
 
-OWASP. Top 10:2021. Luettavissa: [https://owasp.org/Top10/A01_2021-Broken_Access_Control/](https://owasp.org/Top10/A01_2021-Broken_Access_Control/). Luettu: 2.11.2024
-https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/
-https://portswigger.net/web-security/access-control
-https://terokarvinen.com/2006/raportin-kirjoittaminen-4/
+Karvinen, T. 2024. Sovellusten hakkerointi ja haavoittuvuudet. Luettavissa: [https://terokarvinen.com/application-hacking/](https://terokarvinen.com/application-hacking/)
 
-https://docs.python.org/3/library/venv.html venv
+OWASP. Top 10:2021. Luettavissa: [https://owasp.org/Top10/A01_2021-Broken_Access_Control/](https://owasp.org/Top10/A01_2021-Broken_Access_Control/). Luettu: 2.11.2024
+
+PortSwigger. Luettavissa: [https://portswigger.net/web-security/access-control](https://portswigger.net/web-security/access-control). Luettu: 2.11.2024. 
+
+Karvinen, T. 2006. Raportin kirjoittaminen. Luettavissa: [https://terokarvinen.com/2006/raportin-kirjoittaminen-4/](https://terokarvinen.com/2006/raportin-kirjoittaminen-4/). Luettu: 2.11.2024.
+
+Venv https://docs.python.org/3/library/venv.html
 
 Yay AUR pakettien asennukseen: https://github.com/Jguer/yay
 
 AUR paketti ffuf:lle: https://aur.archlinux.org/packages/ffuf
 
-https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/
+Karvinen, T. 2023. Find Hidden Web Directories - Fuzz URLs with ffuf. Luettavissa: [https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/](https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/). Luettu: 2.11.2024.
 
-https://terokarvinen.com/hack-n-fix/ 010 ja 020 
+Karvinen, T. 2024. Hack'n Fix. Luettavissa:[https://terokarvinen.com/hack-n-fix/](https://terokarvinen.com/hack-n-fix/). Luettu: 2.11.2024.
 
 StackHawk 2024. Finding and Fixing SQL Injection Vulnerabilities in Flask (Python) with StackHawk. Luettavissa: [https://www.stackhawk.com/blog/finding-and-fixing-sql-injection-vulnerabilities-in-flask-python/](https://www.stackhawk.com/blog/finding-and-fixing-sql-injection-vulnerabilities-in-flask-python/). Luettu: 1.11.2024 Fiksi 01-staff-only
