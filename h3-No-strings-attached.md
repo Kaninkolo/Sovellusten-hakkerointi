@@ -35,7 +35,7 @@ Lähdin etsimällä netistä tietoa obfuskoinnista ja löysin memfrob() funktion
 
 ![images/memfrobstrings.png](images/memfrobstrings.png)
 
-Päädyin ratkaisuun jossa olen generoinut salasanan memfrob:illa ennen kuin se on ajettu(muuttaen sen heksadesimaaliksi) jolloin strings komennolla ei näe suoraan salasanaa tulosteesta, salasana generoidaan kommentoidussa osiossa olevalla koodilla siten että  original_password = "haluttu stringi" käännetään memfrobilla ja sen jälkeen kun ajaa ohjelman se tulostaa stringistä memfrobilla obfuskoidun pätkän jota pystyi käyttämään salasanana.
+Päädyin ratkaisuun jossa olen generoinut salasanan memfrob:illa ennen kuin se on ajettu jolloin strings komennolla ei näe suoraan salasanaa tulosteesta, salasana generoidaan kommentoidussa osiossa olevalla koodilla siten että  original_password = "haluttu stringi" käännetään memfrobilla ja sen jälkeen kun ajaa ohjelman se tulostaa stringistä memfrobilla obfuskoidun pätkän jota pystyi käyttämään salasanana.
 
 ![images/memfroblopullinen.png](images/memfroblopullinen.png)
 
