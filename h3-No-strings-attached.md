@@ -45,7 +45,7 @@ Päädyin ratkaisuun jossa olen generoinut salasanan memfrob:illa ennen kuin se 
 
 ## Packd. Aja 'packd' paketista ezbin-challenges.zip. Mikä on salasana? Mikä on lippu?
 
-Kokeilin aluksi strings kautta ja huomasin tulosteessa osittain luettavaa tekstiä, teksti vastasi osittain aiemman tehtävän tulosteita(kuvassa oikealla), lähdin sen kautta etsimään löytyisikö strings:in tulosteesta muuta jonka voisi yhdistää luomaan kokonaisen lauseen ja salasanan. 
+Kokeilin aluksi strings kautta ja huomasin tulosteessa osittain luettavaa tekstiä, teksti vastasi osittain aiemman tehtävän tulosteita(kuvassa oikealla), lähdin sen kautta etsimään löytyisikö strings:in tulosteesta muuta jonka voisi yhdistää luomaan kokonaisen lauseen ja salasanan. Huomasin myös että lauseet leikkaantuu kun niitä toistaa, esimerkiksi "What's the password?" - "Yes! That's the password" mutta leikkaantuu T:n jälkeen strings:ssä. 
 
 	strings packd
 
