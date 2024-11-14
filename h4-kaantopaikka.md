@@ -108,7 +108,7 @@ Annoin ohjelmalle ajo oikeudet ja testasin toimiiko ohjelma.
 
 	./crackme01e.64
 
-Sen jälkeen tein saman mitä tein aiemmalle ohjelmalle eli isäsin ohjelman Ghidraan, avasin sen, analysoin ja valitsin main funktion.
+Sen jälkeen tein saman mitä tein aiemmalle ohjelmalle eli lisäsin ohjelman Ghidraan, avasin sen, analysoin ja valitsin main funktion.
 
 ![images/nora-02.png](images/nora-02.png)
 
@@ -128,7 +128,7 @@ Annoin ohjelmalle ajo oikeudet ja testasin toimiiko ohjelma.
 
 	./crackme02.64
 
-Sen jälkeen tein saman mitä tein aiemmalle ohjelmalle eli isäsin ohjelman Ghidraan, avasin sen, analysoin ja valitsin main funktion. Nimesin muuttujat hetken pähkäilyn jälkeen.
+Sen jälkeen tein saman mitä tein aiemmalle ohjelmalle eli lisäsin ohjelman Ghidraan, avasin sen, analysoin ja valitsin main funktion. Nimesin muuttujat hetken pähkäilyn jälkeen.
 
 Huomiota herätti "if (user_input == '\0') break;" eli break null-terminate merkistä.
 
@@ -138,7 +138,7 @@ Kokeilin laittaa tyhjää monella tavalla ja sain toimimaan
 
 ![images/nora-06.png](images/nora-06.png)
 
-Ohjelma toimii siten että se odottaa käyttäjältä vähintään yhtä argumenttia tai tulostaa "Need exactly one argument.", alkuun asettaa salasanaksi pelkän "p" ja i eli indeksin alkamaan 0:sta eli ensimmäisestä kirjaimesta. Sen jälkeen alkaa do while looppi jossa otetaan käyttäjän syöte eli user_input indeksin mukainen merkki. Jos expected_character + -1 ei ole sama kuin käyttäjän syötteen indeksin mukainen merkki integer muodossa(ASCII?) tulostetaan "No, %s is not correct.\n" ja poistutaan ohjelmasta, jos se taas on sen mukainen merkki jatketaa while looppia jossa otetaan "password1" seuraavan indeksin mukainen merkki[i+1] eli "a" ja vielä lisätään indeksiin +1. Looppia käydään niin kauan kunnes jokin odotetuista merkeistä ei täsmää käyttäjän syötteen kanssa tai jos odotettu merkki on null-terminated merkki eli password1 jälkeinen merkki jonka jälkeen saadaan ratkaisu.
+Ohjelma toimii siten että se odottaa käyttäjältä vähintään yhtä argumenttia tai tulostaa "Need exactly one argument.", alkuun asettaa salasanaksi(expected_character) pelkän "p" ja i eli indeksin alkamaan 0:sta eli ensimmäisestä kirjaimesta. Sen jälkeen alkaa do while looppi jossa otetaan käyttäjän syöte eli user_input indeksin mukainen merkki. Jos expected_character + -1 ei ole sama kuin käyttäjän syötteen indeksin mukainen merkki integer muodossa(ASCII?) tulostetaan "No, %s is not correct.\n" ja poistutaan ohjelmasta, jos se taas on sen mukainen merkki jatketaa while looppia jossa otetaan "password1" seuraavan indeksin mukainen merkki[i+1] eli "a" ja vielä lisätään indeksiin +1. Looppia käydään niin kauan kunnes jokin odotetuista merkeistä ei täsmää käyttäjän syötteen kanssa tai jos odotettu merkki on null-terminated merkki eli password1 jälkeinen merkki jonka jälkeen saadaan ratkaisu.
 
 ## Crackme02 on kaksi ratkaisua. Löydätkö molemmat?
 
