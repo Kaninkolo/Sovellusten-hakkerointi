@@ -175,3 +175,7 @@ Testasin vielä ratkaisuja:
 Hammond, J. 2022. GHIDRA for Reverse Engineering (PicoCTF 2022 #42 'bbbloat') Katsottavissa: https://www.youtube.com/watch?v=oTD_ki86c9I Katsottu:
 
 Karvinen, T. Sovellusten hakkerointi ja haavoittuvuudet. Luettavissa: https://terokarvinen.com/application-hacking/
+
+ASCII muunnin: https://www.unit-conversion.info/texttools/ascii/
+
+Tindall 2023. Nora Crackme. Tehtävät: https://github.com/NoraCodes/crackmes
