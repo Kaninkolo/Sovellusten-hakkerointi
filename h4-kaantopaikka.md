@@ -11,7 +11,10 @@ Muisti: 8Gt.
 
 ## Lue/katso/kuuntele ja tiivistä.
 
-### Hammond 2022
+### Hammond 2022 - GHIDRA for Reverse Engineering
+
+John Hammond käy läpi videolla PicoCTF:n bbbloat tehtävän ratkaisun läpi. Alkuun Ghidrassa etsii String:iä jota ohjelma kysyy ja löytää sen avulla main funktion jossa if lausekkeessa verrataan annettua numeroa heksadesimaaliin, Pythonin avulla kääntää sen desimaaliluvuksi ja saa numeron jolla selvitetään lippu.
+
 
 ## Asenna Ghidra
 
@@ -172,9 +175,9 @@ Testasin vielä ratkaisuja:
 
 ## Lähteet:
 
-Hammond, J. 2022. GHIDRA for Reverse Engineering (PicoCTF 2022 #42 'bbbloat') Katsottavissa: https://www.youtube.com/watch?v=oTD_ki86c9I Katsottu:
+Hammond 2022. GHIDRA for Reverse Engineering (PicoCTF 2022 #42 'bbbloat') Katsottavissa: https://www.youtube.com/watch?v=oTD_ki86c9I Katsottu: 14.11.2024
 
-Karvinen, T. Sovellusten hakkerointi ja haavoittuvuudet. Luettavissa: https://terokarvinen.com/application-hacking/
+Karvinen 2024. Sovellusten hakkerointi ja haavoittuvuudet. Luettavissa: https://terokarvinen.com/application-hacking/
 
 ASCII muunnin: https://www.unit-conversion.info/texttools/ascii/
 
