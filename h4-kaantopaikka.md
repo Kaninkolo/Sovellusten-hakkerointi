@@ -158,8 +158,17 @@ Huomasin että strcmp katsoo ainoastaa 9 ensimmäistä merkkiä jolloin salasana
 
 ##  Nora crackme02e. Ratkaise binääri
 
-
 ![images/nora-11.png](images/nora-11.png)
+
+Ohjelma toimii samalla logiikalla kuin Crackme02 paitsi että vähennetään 2 ja cVar2 ei oteta indeksin seuraavaa automaattisesti koska ensimmäinen kirjain eroaa jo seuraavasta, lähdin muuttamaan "yuvmnpoi" ASCII:ksi ja vähensin jokaisesta merkistä 2.
+
+![images/nora-12.png](images/nora-12.png)
+
+![images/nora-13.png](images/nora-13.png)
+
+Testasin vielä ratkaisuja:
+
+![images/nora-14.png](images/nora-14.png)
 
 ## Lähteet:
 
