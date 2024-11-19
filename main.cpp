@@ -1,5 +1,5 @@
 #include<iostream>
-      
+//Larilta
 using namespace std;
       
 long factorial(int n);
