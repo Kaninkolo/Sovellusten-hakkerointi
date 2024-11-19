@@ -58,7 +58,7 @@ Valitsin dekompiloidusta osion joka katsoo onko iVar1 muuttuja 0, se hyppää As
 
 Muutan JNZ:n pelkäksi JZ:ksi, oikea klikki ja patch instruction(CTRL+SHIFT+G)
 
-![images/ghidra-06.png](images/ghidra-06.png)
+![images/gihdra-06.png](images/gihdra-06.png)
 
 Eron pystyy nähdä jo dekompiloidusta C koodista, mutta muutan ohjelman vielä ajettavaksi ohjelmaksi File>Export Program ja valitsen formaatiksi Original Format. Annan ohjelmalle vielä ajo oikeudet.
 
