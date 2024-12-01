@@ -86,3 +86,5 @@ Karvinen. Sovellusten hakkerointi ja haavoittuvuudet. Luettavissa: https://terok
 Binwalk man sivut.
 
 Github. Bytecode viewer. https://github.com/Konloch/bytecode-viewer/
+
+Github. Mpv-android. https://github.com/mpv-android/mpv-android
